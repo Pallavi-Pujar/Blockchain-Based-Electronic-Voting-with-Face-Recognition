@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CONSTITUENCY LIST</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/table.css"
+    <script src="/static/jquery.min.js"></script>
+    <style>
+       body{
+      
+      background-image: url("/static/home.jpg") ;
+      background-size: 100%;
+      background-repeat: repeat-y;
+      background-position-y: 40px;
+      
+      }
+     #mytable{
+
+        width: 60%;
+     }
+     
+    </style>
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li><a  href="/">LOGOUT</a></li>
+            <li><a  href="registerpage">VOTER REGISTER</a></li>
+        <li><a href="viewvotecountspage" >VIEW VOTE COUNTS</a></li>
+        <li><a href="viewconstituenciespage" class="active">VIEW CONSTITUENCIES</a></li>
+        <li><a href="addconstituencypage" >ADD CONSTITUENCY</a></li>
+        <li><a href="viewcandidatespage" >VIEW CANDIDATES</a></li>
+        <li><a href="addcandidatepage" >ADD CANDIDATE</a></li>
+            
+          </ul>
+    </nav>
+    <div id="google_translate_element"></div>
+
+<center>
+<div class="flashes">
+    
+    {% for message in get_flashed_messages() %}
+      {{ message }}
+    {% endfor %}
+
+  </div>
+ 
+<table id="mytable">
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>STATUS</th>
+            <th>ACTION</th>
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        {% for r in res %}
+        <tr>
+            <td>{{ r[1] }}</td>
+            <td>{{ r[2] }}</td>
+            {% if r[2]=='Active'%}
+            <td><a href="deactivate?id={{r[0]}}" class="linkbtn">DEACTIVATE</a></td>
+            {% else %}
+            <td><a href="activate?id={{r[0]}}" class="linkbtn">ACTIVATE</a></td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</center>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+  </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>

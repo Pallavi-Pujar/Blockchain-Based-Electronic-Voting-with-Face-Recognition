@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CANDIDATES LIST</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <style>
+       body{
+      
+      background-image: url("/static/home.jpg") ;
+      background-size: 100%;
+      background-repeat: repeat-y;
+      background-position-y: 40px;
+      
+      }
+        /* Container for event cards */
+      .bird-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+      }
+
+      /* Styling each event card */
+      .bird-item {
+        width: 300px;
+        background-color: #fff;
+        margin: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .bird-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Event image styling */
+      .bird-item img {
+        width: 100%;
+        height: 200px;
+        
+      }
+
+      /* Event details styling */
+      .bird-item p {
+        font-size: 16px;
+        margin: 8px 0;
+        color: #333;
+        padding: 0 15px;
+        text-align: start;
+      }
+      .bird-item p strong {
+        color: #750043;
+      }
+      textarea {
+        width: 100%;
+        border: none;
+        resize: none;
+        font-size: 14px;
+        background-color: #f7f7f7;
+        padding: 5px;
+        color: #555;
+      }
+
+      /* Button styling */
+      .linkbtn {
+        display: block;
+        margin: 15px auto;
+        text-align: center;
+        background-color: #750043;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+      .linkbtn:hover {
+        background-color: #9f0066;
+      }
+
+    
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a  href="/">LOGOUT</a></li>
+      <li><a  href="registerpage">VOTER REGISTER</a></li>
+        <li><a href="viewvotecountspage" >VIEW VOTE COUNTS</a></li>
+        <li><a href="viewconstituenciespage" >VIEW CONSTITUENCIES</a></li>
+        <li><a href="addconstituencypage" >ADD CONSTITUENCY</a></li>
+        <li><a href="viewcandidatespage" class="active">VIEW CANDIDATES</a></li>
+        <li><a href="addcandidatepage" >ADD CANDIDATE</a></li>
+      
+    </ul>
+  </nav>
+  <div id="google_translate_element"></div>
+    <center>
+        <div class="flashes">
+            {% for message in get_flashed_messages() %}
+              {{ message }}
+            {% endfor %}
+          </div></center>
+    <div class="bird-container">
+        {% for r in res %}
+        <div class="bird-item">
+           
+            <img src="../static/uploads/partyimages/{{r[3]}} " alt="{{ r[1] }}">
+       
+            <p><strong>Candidate Name:</strong> {{ r[1] }}</p>
+            <p><strong>Party:</strong> {{ r[2] }}</p>
+            <p><strong>Constitution:</strong> {{ r[6] }}</p>
+            <a href="deleteb?id={{r[0]}}" class="linkbtn">DELETE</a>
+        </div>
+        {% endfor %}
+    </div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

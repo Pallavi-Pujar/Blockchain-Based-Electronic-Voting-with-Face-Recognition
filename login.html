@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <style>
+body{
+
+background-image: url("/static/home.jpg") ;
+background-size: 100%;
+background-repeat: no-repeat;
+background-position-y: 40px;
+
+}
+    </style>
+  </head>
+  <body >
+    <nav>
+      <ul>
+        <li><a  href="/">HOME</a></li>
+        <li><a href="loginpage" class="active">LOGIN</a></li>
+       
+        
+      </ul>
+    </nav>
+    <div id="google_translate_element"></div>
+<br><br><br><br><br><br>
+
+    <div class="form">
+      <h2>LOGIN</h2>
+      <div class="flashes">
+        {% for message in get_flashed_messages() %}
+          {{ message }}
+        {% endfor %}
+      </div>
+      <form action="login" method="POST">
+
+        <label for="type">LOGIN TYPE:</label>
+        <select name="ltype" id="loginType" onchange="changeLabel()">
+          <option value="eauthority">ELECTION AUTHORITY</option>
+          <option value="voter">VOTER</option>
+
+        </select>
+        
+        <label for="name" id="selectedOptionLabel">USER ID:</label>
+        <input type="text" id="user" name="user" required>
+        
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <input type="submit" value="LOGIN">
+      </form>
+    </div>
+
+    <script>
+      function changeLabel() {
+          var dropdown = document.getElementById("loginType");
+          var selectedOption = dropdown.options[dropdown.selectedIndex].text;
+          if(selectedOption=="ELECTION AUTHORITY"){
+            document.getElementById("selectedOptionLabel").innerText = "USER ID:";
+           
+           
+          }
+          else if(selectedOption=="VOTER"){
+            document.getElementById("selectedOptionLabel").innerText = "VOTER ID:";
+            
+          
+          }
+          
+        }
+      </script>
+       <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+          <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>

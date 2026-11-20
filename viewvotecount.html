@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VOTE COUNT</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/table.css"
+    <script src="/static/jquery.min.js"></script>
+  
+     
+        
+    <style>
+       body{
+      
+      background-image: url("/static/home.jpg") ;
+      background-size: 100%;
+      background-repeat: repeat-y;
+      background-position-y: 40px;
+      
+      }
+     #mytable{
+
+        width: 60%;
+     }
+
+    
+
+ /* Search input styling */
+ input[type="text"] {
+        width: 15%;
+        padding: 10px;
+       
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+      }
+
+   
+     
+    </style>
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li><a  href="/">LOGOUT</a></li>
+            <li><a  href="registerpage">VOTER REGISTER</a></li>
+        <li><a href="viewvotecountspage" class="active">VIEW VOTE COUNTS</a></li>
+        <li><a href="viewconstituenciespage" >VIEW CONSTITUENCIES</a></li>
+        <li><a href="addconstituencypage" >ADD CONSTITUENCY</a></li>
+        <li><a href="viewcandidatespage" >VIEW CANDIDATES</a></li>
+        <li><a href="addcandidatepage" >ADD CANDIDATE</a></li>
+            
+          </ul>
+    </nav>
+    <div id="google_translate_element"></div>
+    <center> 
+<div id="searchbar">
+  <input type="text" id="searchInput" placeholder="Search Constituency name">
+  </div>
+  
+<div class="flashes">
+    
+    {% for message in get_flashed_messages() %}
+      {{ message }}
+    {% endfor %}
+
+  </div>
+
+  
+  <table id="mytable">
+    <thead>
+        <tr>
+            <th>CANDIDATE NAME</th>
+            <th>PARTY</th>
+            <th>CONSTITUTION NAME</th>
+            <th>VOTE COUNT</th>
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        {% for r in res %}
+        <tr>
+            <td>{{ r[1] }}</td>
+            <td>{{ r[2] }}</td>
+            <td>{{ r[6] }}</td>
+            <td>{{ r[8] }}</td>
+            
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</center>
+<script>
+    document.getElementById('searchInput').addEventListener('keyup', function(event) {
+        var searchTerm = event.target.value.trim();
+        // Send AJAX request to Flask route to fetch matching candidates
+        fetch('/search_cons', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({searchTerm: searchTerm})
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Received data:', data);
+            // Update the table with matching candidates
+            var myTableBody = document.getElementById('mytable').getElementsByTagName('tbody')[0];
+            myTableBody.innerHTML = ''; // Clear existing table rows
+            data.forEach(function(row) {
+                var tableRow = myTableBody.insertRow();
+                row.forEach(function(cellValue) {
+                    var cell = tableRow.insertCell();
+                    cell.textContent = cellValue; // Set the cell text to the value
+                });
+            });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+    </script>
+     <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>

@@ -1,0 +1,647 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "flash",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Markup",
+        "importPath": "markupsafe",
+        "description": "markupsafe",
+        "isExtraImport": true,
+        "detail": "markupsafe",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "secure_filename",
+        "importPath": "werkzeug.utils",
+        "description": "werkzeug.utils",
+        "isExtraImport": true,
+        "detail": "werkzeug.utils",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "embeddings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "embeddings",
+        "description": "embeddings",
+        "detail": "embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "recognition",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "recognition",
+        "description": "recognition",
+        "detail": "recognition",
+        "documentation": {}
+    },
+    {
+        "label": "blockchain",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "blockchain",
+        "description": "blockchain",
+        "detail": "blockchain",
+        "documentation": {}
+    },
+    {
+        "label": "Mail",
+        "importPath": "flask_mail",
+        "description": "flask_mail",
+        "isExtraImport": true,
+        "detail": "flask_mail",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "flask_mail",
+        "description": "flask_mail",
+        "isExtraImport": true,
+        "detail": "flask_mail",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "face_recognition",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "face_recognition",
+        "description": "face_recognition",
+        "detail": "face_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "winsound",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "winsound",
+        "description": "winsound",
+        "detail": "winsound",
+        "documentation": {}
+    },
+    {
+        "label": "dbconnection",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def dbconnection():\n    con = mq.connect(host='localhost', database='facebvotingweb',user='root',password='root')\n    return con\n@app.route('/')\ndef home():\n    return render_template('index.html', title='home')\n@app.route('/loginpage')\ndef loginpage():\n    return render_template('login.html',title='login')\n@app.route('/registerpage')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home():\n    return render_template('index.html', title='home')\n@app.route('/loginpage')\ndef loginpage():\n    return render_template('login.html',title='login')\n@app.route('/registerpage')\ndef registerpage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from constituencies\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "loginpage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def loginpage():\n    return render_template('login.html',title='login')\n@app.route('/registerpage')\ndef registerpage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from constituencies\")\n    res = cursor.fetchall()\n    return render_template('register.html',res=res)\n@app.route('/addcandidatepage')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "registerpage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def registerpage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from constituencies\")\n    res = cursor.fetchall()\n    return render_template('register.html',res=res)\n@app.route('/addcandidatepage')\ndef addcandidatepage():\n    con = dbconnection()\n    cursor = con.cursor()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "addcandidatepage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def addcandidatepage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from constituencies\")\n    res = cursor.fetchall()\n    return render_template('addcandidate.html',res=res)\n@app.route('/addconstituencypage')\ndef addconstituencypage():\n    return render_template('addcons.html')\n@app.route('/login', methods=['GET', 'POST'])",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "addconstituencypage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def addconstituencypage():\n    return render_template('addcons.html')\n@app.route('/login', methods=['GET', 'POST'])\ndef login():\n    if request.method == 'POST':\n        user = request.form['user']\n        password = request.form['password']\n        ltype = request.form['ltype']\n        if ltype=='eauthority':\n            con = dbconnection()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def login():\n    if request.method == 'POST':\n        user = request.form['user']\n        password = request.form['password']\n        ltype = request.form['ltype']\n        if ltype=='eauthority':\n            con = dbconnection()\n            cursor = con.cursor()\n            cursor.execute(\"select * from eauthority where userid='{}' and pass='{}'\".format(user,password))\n            res = cursor.fetchall()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "savecandidate",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def savecandidate():\n    if request.method == 'POST':\n        name = request.form['name']\n        party = request.form['party']\n        cid = request.form['cid']\n        uploaded_file = request.files['photo']\n        if uploaded_file.filename != '':\n            # Save the uploaded file to a specific folder\n            filename = 'static/uploads/partyimages/' + uploaded_file.filename\n            onlyfilename=uploaded_file.filename",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "viewcandidatespage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def viewcandidatespage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from candidates inner join constituencies on candidates.cid=constituencies.id\")\n    res = cursor.fetchall()\n    if res==[]:\n        message = Markup(\"<h3>Failed! Details not found</h3>\")\n        flash(message)\n        return render_template('viewcandidates.html', title='candidates')\n    else:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "saveconstituency",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def saveconstituency():\n    if request.method == 'POST':\n        consname = request.form['consname']\n        status = 'Inactive'\n        con = dbconnection()\n        cursor = con.cursor()\n        cursor.execute(\"select * from constituencies where consname='{}'\".format(consname))\n        res = cursor.fetchall()\n        if res==[]:\n                cursor.execute(\"insert into constituencies(consname,status)values('{}','{}')\".format(consname,status))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "viewconstituenciespage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def viewconstituenciespage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from constituencies\")\n    res = cursor.fetchall()\n    if res==[]:\n        message = Markup(\"<h3>Failed! Details not found</h3>\")\n        flash(message)\n        return render_template('viewcons.html', title='constitutions')\n    else:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "deactivate",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def deactivate():\n    id =request.args.get('id')\n    status = 'Inactive'\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"update constituencies set status='{}' where id={}\".format(status,int(id)))\n    con.commit()\n    con.close()\n    message = Markup(\"<h3>Success! constituency Deactivated</h3>\")\n    flash(message)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "activate",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def activate():\n    print(\"active\")\n    id =request.args.get('id')\n    status = 'Active'\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"update constituencies set status='{}' where id={}\".format(status,int(id)))\n    con.commit()\n    con.close()\n    message = Markup(\"<h3>Success! constituency Activated</h3>\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def register():\n    if request.method == 'POST':\n        name = request.form['name']\n        phone = request.form['phone']\n        aadharid = request.form['aadharid']\n        voterid = request.form['voterid']\n        gender = request.form['gender']\n        cid = request.form['cid']\n        password = request.form['password']\n        status=\"notvoted\"",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "vviewcandidates",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def vviewcandidates(cid):\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from candidates inner join constituencies on candidates.cid=constituencies.id where candidates.cid={}\".format(int(cid)))\n    res = cursor.fetchall()\n    if res==[]:\n        message = Markup(\"<h3>Failed! Details not found</h3>\")\n        flash(message)\n        return render_template('vviewcandidates.html', title='candidates')\n    else:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "savemyvote",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def savemyvote():\n    #print(\"hello\")\n    cid =request.args.get('id')\n    status = \"voted\"\n    vid = session['vid']\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"update voters set status='{}' where id={}\".format(status,int(vid)))\n    con.commit()\n    myblockchain.add_block(cid, \"yes\", vid)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "viewvotecountspage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def viewvotecountspage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from candidates\")\n    res = cursor.fetchall()\n    votes = []\n    blocks = myblockchain.get_blocks()\n    # Collect votes from blocks\n    for block in blocks:\n        if block[2] is not None:  # Ensure block[2] is not None",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "search_cons",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def search_cons():\n    data = request.get_json()\n    search_term = data['searchTerm'].lower()  # Get the search term from the request\n    con = dbconnection()\n    cursor = con.cursor()\n    # Query to filter candidates based on constituency name\n    cursor.execute(\"\"\"\n        SELECT candidates.id AS cid, candidates.cname AS candidate_name, candidates.party AS party, \n               constituencies.consname AS constituency_name \n        FROM candidates ",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "send_otp",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def send_otp():\n    data = request.get_json()\n    email = data.get('email')\n    # Generate OTP\n    otp = ''.join(random.choices(string.digits, k=6))\n    otp_store[email] = {'otp': otp, 'expiry': time.time() + 300}  # OTP expires in 5 minutes\n    session[email]=otp\n    # Send OTP email\n    msg = Message('Your OTP Code', sender='your_email@gmail.com', recipients=[email])\n    msg.body = f'Your OTP code is {otp}'",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "verify_otp",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def verify_otp():\n    data = request.get_json()\n    otp = data.get('otp')\n    email = data.get('email')  # Get email from form, or you can pass via the API as well\n    otp_store = session[email]\n    if email in otp_store:\n        return jsonify({\"status\": \"success\"}), 200\n    else:\n        return jsonify({\"status\": \"fail\"}), 400\n@app.teardown_appcontext",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "shutdown_session",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def shutdown_session(exception=None):\n    myblockchain.save_chain()  # Save the blockchain data when the app context is torn down\nif __name__ == '__main__':\n    app.run(debug=True,host='0.0.0.0',port=5000)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\napp.config['SECRET_KEY'] = 'secret_key'\nmyblockchain = blockchain.Blockchain()\n# Configure Flask-Mail\napp.config['MAIL_SERVER'] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465\napp.config['MAIL_USERNAME'] = 'your_email@gmail.com'  # Replace with your email\napp.config['MAIL_PASSWORD'] = 'your_email_password'  # Replace with your email password\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SECRET_KEY']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['SECRET_KEY'] = 'secret_key'\nmyblockchain = blockchain.Blockchain()\n# Configure Flask-Mail\napp.config['MAIL_SERVER'] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465\napp.config['MAIL_USERNAME'] = 'your_email@gmail.com'  # Replace with your email\napp.config['MAIL_PASSWORD'] = 'your_email_password'  # Replace with your email password\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "myblockchain",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "myblockchain = blockchain.Blockchain()\n# Configure Flask-Mail\napp.config['MAIL_SERVER'] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465\napp.config['MAIL_USERNAME'] = 'your_email@gmail.com'  # Replace with your email\napp.config['MAIL_PASSWORD'] = 'your_email_password'  # Replace with your email password\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\ndef dbconnection():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['MAIL_SERVER']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['MAIL_SERVER'] = 'smtp.gmail.com'\napp.config['MAIL_PORT'] = 465\napp.config['MAIL_USERNAME'] = 'your_email@gmail.com'  # Replace with your email\napp.config['MAIL_PASSWORD'] = 'your_email_password'  # Replace with your email password\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\ndef dbconnection():\n    con = mq.connect(host='localhost', database='facebvotingweb',user='root',password='root')\n    return con",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['MAIL_PORT']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['MAIL_PORT'] = 465\napp.config['MAIL_USERNAME'] = 'your_email@gmail.com'  # Replace with your email\napp.config['MAIL_PASSWORD'] = 'your_email_password'  # Replace with your email password\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\ndef dbconnection():\n    con = mq.connect(host='localhost', database='facebvotingweb',user='root',password='root')\n    return con\n@app.route('/')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['MAIL_USERNAME']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['MAIL_USERNAME'] = 'your_email@gmail.com'  # Replace with your email\napp.config['MAIL_PASSWORD'] = 'your_email_password'  # Replace with your email password\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\ndef dbconnection():\n    con = mq.connect(host='localhost', database='facebvotingweb',user='root',password='root')\n    return con\n@app.route('/')\ndef home():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['MAIL_PASSWORD']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['MAIL_PASSWORD'] = 'your_email_password'  # Replace with your email password\napp.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\ndef dbconnection():\n    con = mq.connect(host='localhost', database='facebvotingweb',user='root',password='root')\n    return con\n@app.route('/')\ndef home():\n    return render_template('index.html', title='home')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['MAIL_USE_TLS']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['MAIL_USE_TLS'] = False\napp.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\ndef dbconnection():\n    con = mq.connect(host='localhost', database='facebvotingweb',user='root',password='root')\n    return con\n@app.route('/')\ndef home():\n    return render_template('index.html', title='home')\n@app.route('/loginpage')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['MAIL_USE_SSL']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['MAIL_USE_SSL'] = True\nmail = Mail(app)\ndef dbconnection():\n    con = mq.connect(host='localhost', database='facebvotingweb',user='root',password='root')\n    return con\n@app.route('/')\ndef home():\n    return render_template('index.html', title='home')\n@app.route('/loginpage')\ndef loginpage():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "mail",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "mail = Mail(app)\ndef dbconnection():\n    con = mq.connect(host='localhost', database='facebvotingweb',user='root',password='root')\n    return con\n@app.route('/')\ndef home():\n    return render_template('index.html', title='home')\n@app.route('/loginpage')\ndef loginpage():\n    return render_template('login.html',title='login')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "otp_store",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "otp_store = {}\n# Route to send OTP\n@app.route('/send_otp', methods=['POST'])\ndef send_otp():\n    data = request.get_json()\n    email = data.get('email')\n    # Generate OTP\n    otp = ''.join(random.choices(string.digits, k=6))\n    otp_store[email] = {'otp': otp, 'expiry': time.time() + 300}  # OTP expires in 5 minutes\n    session[email]=otp",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "Block",
+        "kind": 6,
+        "importPath": "blockchain",
+        "description": "blockchain",
+        "peekOfCode": "class Block:\n    def __init__(self, index, timestamp, candidate_id, vote, voter_id, previous_hash):\n        self.index = index\n        self.timestamp = timestamp\n        self.candidate_id = candidate_id\n        self.vote = vote\n        self.voter_id = voter_id\n        self.previous_hash = previous_hash\n        self.hash = self.calculate_hash()\n    def calculate_hash(self):",
+        "detail": "blockchain",
+        "documentation": {}
+    },
+    {
+        "label": "Blockchain",
+        "kind": 6,
+        "importPath": "blockchain",
+        "description": "blockchain",
+        "peekOfCode": "class Blockchain:\n    def __init__(self):\n        self.chain = []\n        self.create_genesis_block()\n        self.load_chain()  # Load the existing blockchain data if it exists\n    def create_genesis_block(self):\n        genesis_block = Block(0, time(), None, None, None, \"0\")\n        self.chain.append(genesis_block)\n    def add_block(self, candidate_id, vote, voter_id):\n        previous_block = self.chain[-1]",
+        "detail": "blockchain",
+        "documentation": {}
+    },
+    {
+        "label": "Block",
+        "kind": 6,
+        "importPath": "blockchainwithminer",
+        "description": "blockchainwithminer",
+        "peekOfCode": "class Block:\n    def __init__(self, index, timestamp, candidate_id, vote, voter_id, previous_hash):\n        self.index = index\n        self.timestamp = timestamp\n        self.candidate_id = candidate_id\n        self.vote = vote\n        self.voter_id = voter_id\n        self.previous_hash = previous_hash\n        self.nonce = 0\n        self.hash = self.calculate_hash()",
+        "detail": "blockchainwithminer",
+        "documentation": {}
+    },
+    {
+        "label": "Blockchain",
+        "kind": 6,
+        "importPath": "blockchainwithminer",
+        "description": "blockchainwithminer",
+        "peekOfCode": "class Blockchain:\n    def __init__(self):\n        self.chain = []\n        self.difficulty = 2  # Adjust the difficulty as needed\n        self.create_genesis_block()\n    def create_genesis_block(self):\n        # Manually create the first block (genesis block)\n        genesis_block = Block(0, time(), None, None, None, \"0\")\n        genesis_block.mine_block(self.difficulty)\n        self.chain.append(genesis_block)",
+        "detail": "blockchainwithminer",
+        "documentation": {}
+    },
+    {
+        "label": "trainPerson",
+        "kind": 2,
+        "importPath": "embeddings",
+        "description": "embeddings",
+        "peekOfCode": "def trainPerson(voterid,aadharid):\n        name= aadharid\n        ref_id= voterid\n        print(\"function called\")\n        try:\n                f=open(\"ref_name.pkl\",\"rb\")\n                ref_dictt=pickle.load(f)\n                f.close()\n        except:\n                ref_dictt={}",
+        "detail": "embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "detectPerson",
+        "kind": 2,
+        "importPath": "recognition",
+        "description": "recognition",
+        "peekOfCode": "def detectPerson():\n    global unknowncounter\n    global counter\n    # Load reference data from pickle files\n    with open(\"ref_name.pkl\", \"rb\") as f:\n        ref_dict = pickle.load(f)  # ref_dict = ref vs name\n    with open(\"ref_embed.pkl\", \"rb\") as f:\n        embed_dict = pickle.load(f)  # embed_dict- ref vs embedding\n    # Initialize arrays for known face encodings and names\n    known_face_encodings = []",
+        "detail": "recognition",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register Page</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <style>
+      body {
+        background-image: url("/static/home.jpg");
+        background-size: 100%;
+        background-repeat: repeat-y;
+        background-position-y: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <nav>
+      <ul>
+        <li><a href="/">LOGOUT</a></li>
+        <li><a href="registerpage" class="active">VOTER REGISTER</a></li>
+        <li><a href="viewvotecountspage">VIEW VOTE COUNTS</a></li>
+        <li><a href="viewconstituenciespage">VIEW CONSTITUENCIES</a></li>
+        <li><a href="addconstituencypage">ADD CONSTITUENCY</a></li>
+        <li><a href="viewcandidatespage">VIEW CANDIDATES</a></li>
+        <li><a href="addcandidatepage">ADD CANDIDATE</a></li>
+      </ul>
+    </nav>
+   
+    <div id="google_translate_element"></div>
+    <div class="form">
+      <h2>VOTER REGISTER</h2>
+      <div class="flashes">
+        {% for message in get_flashed_messages() %}
+          {{ message }}
+        {% endfor %}
+      </div>
+      <form action="register" method="POST">
+        <label for="name">NAME:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">PHONE:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="aadharid">AADHAR ID:</label>
+        <input type="number" id="aadharid" name="aadharid" onchange="validateadhar()" required>
+
+        <label for="voterid">VOTER ID:</label>
+        <input type="text" id="voterid" name="voterid" onchange="validatevoter()" required>
+
+        <label for="gender">GENDER:</label>
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label for="cid">SELECT CONSTITUTION:</label>
+        <select name="cid">
+          {% for r in res %}
+            <option value="{{r[0]}}">{{r[1]}}</option>
+          {% endfor %}
+        </select>
+
+        <!-- New email input field -->
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" placeholder="otp will be sent automatically when email is entered" onchange="sendOTP()" required>
+
+        <!-- New OTP input field -->
+        <label for="otp">OTP:</label>
+        <input type="text" id="otp" name="otp" onchange="verifyOTP()" required disabled>
+
+
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="password" name="password" required>
+
+        
+        <input type="submit" value="REGISTER">
+      </form>
+    </div>
+
+    <script>
+      // Validate Aadhar Number
+      function validateadhar() {
+        var aadhar = document.getElementById("aadharid").value;
+        if(aadhar.length != 12) {
+          alert("Invalid aadhar number and please enter 12digit number");
+          document.getElementById("aadharid").value = "";
+        }
+      }
+
+      // Validate Voter ID
+      function validatevoter() {
+        var voterid = document.getElementById("voterid").value;
+        if(voterid.length != 10) {
+          alert("Invalid Voter Id");
+          document.getElementById("voterid").value = "";
+        }
+      }
+
+      // Send OTP to Email
+      function sendOTP() {
+        var email = document.getElementById("email").value;
+        if(email) {
+          // Send AJAX request to backend to generate and send OTP
+          fetch('/send_otp', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email: email })
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.status == 'success') {
+              alert("OTP sent to your email!");
+              document.getElementById("otp").disabled = false; // Enable OTP field
+            } else {
+              alert("Failed to send OTP.");
+            }
+          });
+        }
+      }
+
+      // Verify OTP
+      function verifyOTP() {
+        var otp = document.getElementById("otp").value;
+        if (otp) {
+          fetch('/verify_otp', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ otp: otp })
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.status == 'success') {
+              alert("OTP Verified");
+            } else {
+              alert("Invalid OTP");
+              document.getElementById("otp").value="";
+            }
+          });
+        }
+      }
+    </script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+  </body>
+</html>

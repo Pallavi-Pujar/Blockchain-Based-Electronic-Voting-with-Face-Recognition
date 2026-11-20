@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADD CANDIDATE</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <style>
+      body{
+      
+      background-image: url("/static/home.jpg") ;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position-y: 40px;
+      
+      }
+          </style>
+  </head>
+  <body >
+    <nav>
+      <ul>
+        <li><a  href="/">LOGOUT</a></li>
+        <li><a  href="registerpage">VOTER REGISTER</a></li>
+        <li><a href="viewvotecountspage" >VIEW VOTE COUNTS</a></li>
+        <li><a href="viewconstituenciespage" >VIEW CONSTITUENCIES</a></li>
+        <li><a href="addconstituencypage" class="active">ADD CONSTITUENCY</a></li>
+        <li><a href="viewcandidatespage" >VIEW CANDIDATES</a></li>
+        <li><a href="addcandidatepage" >ADD CANDIDATE</a></li>
+        
+      </ul>
+    </nav>
+    <div id="google_translate_element"></div>
+<br><br>
+
+    <div class="form">
+      <h2>ADD CONSTITUENCIES</h2>
+      <div class="flashes">
+        {% for message in get_flashed_messages() %}
+          {{ message }}
+        {% endfor %}
+      </div>
+      <form action="saveconstituency" method="POST">
+        
+        <label for="consname">CONSTITUENY NAME:</label>
+        <input type="text" id="consname" name="consname" required>
+
+        <input type="submit" value="SUBMIT">
+      </form>
+    </div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>
